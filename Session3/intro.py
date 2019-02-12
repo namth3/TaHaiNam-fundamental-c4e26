@@ -15,5 +15,18 @@ items = ["che", "chao long", "thit ga"]
 # new_item = "trung vit lon"
 # items.append (new_item)
 # print(items)
-for i in range(len(items)):
-    print(items[i], end = ",")
+#fori
+# for i in range(len(items)):
+#     print(items[i])
+#foreach
+# count = 1
+# for x in items:
+#     print(count, x, sep = ". ")
+#     count +=1
+# for i, x in enumerate (items,1):
+#     print(i, x, sep = ". ")
+#     print(items[1])
+items.pop(1)
+print(items)
+items.remove("thit ga")
+print(items)
