@@ -1,13 +1,25 @@
-Captial = {"VietNam":"Hanoi",
+Capital = {"VietNam":"Hanoi",
 "Indonesia":"Jakarta",
 "Malaysia":"Kualalumpur",
 "Japan":"Tokyo",
 "China":"Beijing",
 "Korean":"Seoul"}
-for key in Captial:
+for key in Capital:
     print(key)
-Country = input("Enter your country: ")
-if Country in Captial:
-    print(Captial[Country])
-else: 
-    print("The country is not in our list. Please try another")
+loop = True
+while loop == True: 
+    Country = input("Enter your country: ")
+    if Country in Capital:
+        print(Capital[Country])
+    elif Country == "Exit":
+        loop = False
+    else: 
+        update_request = input("The country is not in our list. Do you want to update (Y/N)? ")
+        if update_request == "Y":
+            Capital_new = input("Enter a capital: ")
+            Capital[Country] = Capital_new
+            for key in Capital:
+                print(key)
+        else:
+            for key in Capital:
+                print(key)
