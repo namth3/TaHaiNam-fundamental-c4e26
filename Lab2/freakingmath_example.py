@@ -2,8 +2,8 @@ from random import randint, choice
 
 from func import calc
 
-x= randint(0,20)
-y= randint(0,20)
+x= randint(1,20)
+y= randint(1,20)
 r= randint(-2,1)
 cal = choice(["+","-","*","/"])   
 z= calc(x,y,cal)+r
